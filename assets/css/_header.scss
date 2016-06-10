@@ -1,4 +1,5 @@
 @import "_variables";
+@import "_mixin";
 
 .header-nav {
   width: 100%;
@@ -20,6 +21,42 @@
     float: right;
     height: 80px;
     position: relative;
+
+    .nav-menu-items {
+      height: 80px;
+      margin: 0px;
+      padding: 0px;
+      li {
+        list-style: none;
+        float: left;
+        margin-left: 25px;
+        height: 100%;
+
+        a {
+          box-sizing: border-box;
+           @include border-radius(2px);
+          border: 1px solid transparent;
+
+
+          &:before {
+            content: '';
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+          }
+
+          &:hover {
+            color: $wootag-blue;
+            border-color: $wootag-blue;
+          }
+
+          &.menu-link-active {
+            color: $wootag-blue;
+          }
+          padding: 6px 10px;
+        }
+      }
+    }
   }
 
   .header-logo {
