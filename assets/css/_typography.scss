@@ -1,0 +1,17 @@
+$bodyFont: 'OpenSans', Helvetica, sans-serif;
+
+body {
+  font-family: $bodyFont;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-family: $bodyFont;
+}
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+}

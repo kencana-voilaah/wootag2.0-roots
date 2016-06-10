@@ -1,0 +1,12 @@
+@import "../bower_components/normalize-scss/_normalize";
+@import "_variables";
+@import "_typography";
+@import "_header";
+
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

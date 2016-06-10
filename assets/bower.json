@@ -1,0 +1,7 @@
+{
+  "name": "wootag2.0-roots",
+  "private": true,
+  "dependencies": {
+    "normalize-scss": "*"
+  }
+}
